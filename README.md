@@ -1,11 +1,13 @@
-This project serves as an example for how to embed and use [hegemon](http://github.com/Cue/hegemon) in your project.
+This project serves as an example for how to embed and use [hegemon] [hegemon] in your project.
 
 It includes:
 
-* An [http endpoint] [1] routing to pre-packaged scripts.
-* [Tests in javascript] [2] runnable with a JUnit runner.
+* An [http endpoint] [endpoint] routing to pre-packaged [scripts][scripts].
+* [Tests in javascript] [tests] runnable with a JUnit runner.
 
 
-[1]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/cue/hegemon/example/ScriptResource.java
-[2]: https://github.com/Cue/hegemon-example/blob/master/src/test/resources/javascript/exampleTest.js
+[hegemon]: http://github.com/Cue/hegemon
+[endpoint]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/cue/hegemon/example/ScriptResource.java
+[scripts]: https://github.com/Cue/hegemon-example/tree/master/src/main/resources/javascript/script
+[tests]: https://github.com/Cue/hegemon-example/blob/master/src/test/resources/javascript
 
