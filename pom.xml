@@ -27,18 +27,18 @@
       <version>${dropwizard.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.cueup.hegemon</groupId>
+      <groupId>cue.hegemon</groupId>
       <artifactId>hegemon-core</artifactId>
       <version>${hegemon.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.cueup.hegemon</groupId>
+      <groupId>cue.hegemon</groupId>
       <artifactId>hegemon-testing</artifactId>
       <version>${hegemon.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.cueup.hegemon</groupId>
+      <groupId>cue.hegemon</groupId>
       <artifactId>hegemon-testserver</artifactId>
       <version>${hegemon.version}</version>
       <scope>test</scope>
