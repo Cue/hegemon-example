@@ -1,9 +1,9 @@
 package cue.hegemon.example;
 
-import com.cueup.hegemon.LoadError;
-import com.cueup.hegemon.LoadPath;
-import com.cueup.hegemon.Script;
-import com.cueup.hegemon.ScriptCache;
+import cue.hegemon.LoadError;
+import cue.hegemon.LoadPath;
+import cue.hegemon.Script;
+import cue.hegemon.ScriptCache;
 import com.google.common.io.ByteStreams;
 
 import javax.script.ScriptException;
