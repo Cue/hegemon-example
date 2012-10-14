@@ -65,8 +65,7 @@ public class ScriptResource {
       throw new WebApplicationException(Response.Status.NOT_FOUND);
 
     } catch (ScriptException e) {
-      // TODO(kevinclark): Return proper status code.
-      return e.getMessage() + "(" + e.getLineNumber() + ":" + e.getColumnNumber() + ")";
+      throw new WebApplicationException(e, Response.Status.INTERNAL_SERVER_ERROR);
     }
   }
 }
