@@ -15,5 +15,6 @@ public class ExampleService extends Service<ExampleConfiguration> {
   @Override
   protected void initialize(ExampleConfiguration configuration, Environment environment) throws Exception {
     environment.addResource(ScriptResource.class);
+    environment.addResource(CustomScriptResource.class);
   }
 }
