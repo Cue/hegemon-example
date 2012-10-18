@@ -3,16 +3,12 @@ package com.cueup.hegemon.example;
 import com.cueup.hegemon.LoadError;
 import com.cueup.hegemon.LoadPath;
 import com.cueup.hegemon.Script;
-import com.google.common.io.ByteStreams;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.UriInfo;
 import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * The CustomScriptResource is an example of evaluating non-bundled code. This can be used to implement application
