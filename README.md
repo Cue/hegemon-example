@@ -1,12 +1,23 @@
 This project serves as an example for how to embed and use [hegemon] [hegemon] in your project.
 
+Get it: `$ git clone git@github.com:Cue/hegemon-example.git`
+
+Build it: `$ cd hegemon-example; mvn package`
+
+Run it: `$ java -jar target/hegemon-example-0.0.1.jar`
+
 It includes:
 
 * An [http endpoint] [endpoint] routing to pre-packaged [scripts][scripts].
+  Try: `$ curl http://localhost:8080/script/example?foo=bar`
+
 * An [endpoint] [customscript] evaluating post data.
+  Try: `$ curl -d "return 3 + 4" http://localhost:8080/customScript`
+
 * [Tests in javascript] [tests] runnable with a [JUnit runner] [testbinding].
-* An [HTTP server] [testserver] that runs tests and reloads javascript changes without
-  restart.
+
+* An [HTTP server] [testserver] that runs tests and reloads javascript changes without restart.
+  Try: `$ curl -d "return 3 + 4" http://localhost:8080/customScript`
 
 
 [hegemon]: http://github.com/Cue/hegemon
