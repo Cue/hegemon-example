@@ -7,7 +7,7 @@ It includes:
 
 
 [hegemon]: http://github.com/Cue/hegemon
-[endpoint]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/cue/hegemon/example/ScriptResource.java
+[endpoint]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/com/cueup/hegemon/example/ScriptResource.java
 [scripts]: https://github.com/Cue/hegemon-example/tree/master/src/main/resources/javascript/script
 [tests]: https://github.com/Cue/hegemon-example/blob/master/src/test/resources/javascript
 [testbinding]: https://github.com/Cue/hegemon-example/blob/master/src/test/java/ExampleTest.java

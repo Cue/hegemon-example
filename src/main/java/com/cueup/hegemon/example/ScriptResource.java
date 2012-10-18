@@ -1,9 +1,9 @@
-package cue.hegemon.example;
+package com.cueup.hegemon.example;
 
-import cue.hegemon.LoadError;
-import cue.hegemon.LoadPath;
-import cue.hegemon.Script;
-import cue.hegemon.ScriptCache;
+import com.cueup.hegemon.LoadError;
+import com.cueup.hegemon.LoadPath;
+import com.cueup.hegemon.Script;
+import com.cueup.hegemon.ScriptCache;
 import com.google.common.io.ByteStreams;
 
 import javax.script.ScriptException;
@@ -33,14 +33,14 @@ public class ScriptResource {
    * javascript in the resources/javascript/ directory, but additional paths can be passed as well.
    * Custom loading schemes can be made available by implementing the ScriptLocator interface.
    */
-  private static ScriptCache scriptCache = new ScriptCache(new LoadPath());
+  private static ScriptCache scriptCache = new ScriptCache(LoadPath.defaultPath());
 
 
   // post and get just pass along their name, query parameters, and any post data.
   @POST
-  public Object post(@PathParam("name") String name, @Context UriInfo uriInfo, InputStream request)
+  public Object post(@PathParam("name") String name, @Context UriInfo uriInfo, String postBody)
       throws IOException {
-    return run(name, "POST", uriInfo.getQueryParameters(), ByteStreams.toByteArray(request));
+    return run(name, "POST", uriInfo.getQueryParameters(), postBody);
   }
 
   @GET
@@ -52,7 +52,7 @@ public class ScriptResource {
   /**
    * run loads and runs anything in "script/" from the cache.
    */
-  private Object run(String name, String method, Map<String, List<String>> params, final byte[] postData) {
+  private Object run(String name, String method, Map<String, List<String>> params, String postData) {
     try {
       final Script script = scriptCache.get("script/" + name + ".js", params.containsKey("reload"));
       // We load "common.js" into the script by hand so we can call the js defined

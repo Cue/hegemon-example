@@ -1,4 +1,4 @@
-package cue.hegemon.example;
+package com.cueup.hegemon.example;
 
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Environment;

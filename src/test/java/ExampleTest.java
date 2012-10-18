@@ -1,4 +1,4 @@
-import cue.hegemon.testing.HegemonRunner;
+import com.cueup.hegemon.testing.HegemonRunner;
 import org.junit.runner.RunWith;
 
 /**
