@@ -1,6 +1,6 @@
 This project serves as an example for how to embed and use [hegemon] [hegemon] in your project.
 
-Get it: `$ git clone git@github.com:Cue/hegemon-example.git`
+Get it: `$ git clone git://github.com/Cue/hegemon-example.git`
 
 Build it: `$ cd hegemon-example; mvn package`
 
