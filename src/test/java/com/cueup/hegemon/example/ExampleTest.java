@@ -1,3 +1,5 @@
+package com.cueup.hegemon.example;
+
 import com.cueup.hegemon.testing.HegemonRunner;
 import org.junit.runner.RunWith;
 
