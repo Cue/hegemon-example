@@ -27,8 +27,7 @@ public class CustomScriptResource {
   @POST
   public Object post(String postBody) throws IOException, LoadError {
     final Script compiled =
-        new Script("function run() { " +  postBody + " }",
-            LoadPath.defaultPath(), "hegemon/core");
+        new Script("function run() { " +  postBody + " }", LoadPath.defaultPath(), "hegemon/core");
     return compiled.run("run");
   }
 }
