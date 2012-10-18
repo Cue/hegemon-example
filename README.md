@@ -1,4 +1,6 @@
 This project serves as an example for how to embed and use [hegemon] [hegemon] in your project.
+It uses the excellent [dropwizard](https://github.com/codahale/dropwizard) project to make http endpoints available
+with minimum boilerplate, but hegemon will work equally well with whatever you'd like to include it in.
 
 Get it: `$ git clone git://github.com/Cue/hegemon-example.git`
 
