@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <dropwizard.version>0.5.1</dropwizard.version>
-    <hegemon.version>0.0.2-SNAPSHOT</hegemon.version>
+    <hegemon.version>0.0.2</hegemon.version>
     <junit.version>4.8.1</junit.version>
   </properties>
 
