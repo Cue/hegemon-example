@@ -1,11 +1,17 @@
+
+// This object is used to export GET and POST as public methods.
+let example = {};
+
 function GET(params) {
-  return run("GET", params);
+  return run('GET', params);
 }
 
-function POST(params, postdata) {
-  return run("POST", params, postdata);
-}
+example.GET = GET; // You can attach after definition
+
+example.POST = function(params, postdata) { // Or during
+  return run('POST', params, postdata);
+};
 
 function run(method, params, postdata) {
-  return {"method": method, "params": params, "postdata": postdata}
+  return {'method': method, 'params': params, 'postdata': postdata};
 }

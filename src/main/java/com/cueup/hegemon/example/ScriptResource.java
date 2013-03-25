@@ -55,10 +55,8 @@ public class ScriptResource {
   private Object run(String name, String method, Map<String, List<String>> params, String postData) {
     try {
       final Script script = scriptCache.get("script/" + name + ".js", params.containsKey("reload"));
-      // We load "common.js" into the script by hand so we can call the js defined
-      // getParamsAsObject function to coerce 'params' into a js object.
-      script.load("common");
-      Object paramsObject = script.run("getParamsAsObject", params);
+      // We run getParamsAsObject from "common.js" to coerce 'params' into a js object.
+      Object paramsObject = scriptCache.get("common.js").run("common.getParamsAsObject" , params);
       return script.run(method, paramsObject, postData);
 
     } catch (LoadError loadError) {

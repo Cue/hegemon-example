@@ -6,7 +6,7 @@ Get it: `$ git clone git://github.com/Cue/hegemon-example.git`
 
 Build it: `$ cd hegemon-example; mvn package`
 
-Run it: `$ java -jar target/hegemon-example-0.0.1.jar`
+Run it: `$ java -jar target/hegemon-example-0.0.2.jar server`
 
 It includes:
 
@@ -19,13 +19,13 @@ It includes:
 * [Tests in javascript] [tests] runnable with a [JUnit runner] [testbinding].
 
 * An [HTTP server] [testserver] that runs tests and reloads javascript changes without restart.
-  Try: `$ curl -d "return 3 + 4" http://localhost:8080/customScript`
+  Try opening in a browser: http://localhost:7070/ and click on the test class name.
 
 
 [hegemon]: http://github.com/Cue/hegemon
-[endpoint]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/com/cueup/hegemon/example/ScriptResource.java
-[customscript]: https://github.com/Cue/hegemon-example/blob/master/src/main/java/com/cueup/hegemon/example/CustomScriptResource.java
-[scripts]: https://github.com/Cue/hegemon-example/tree/master/src/main/resources/javascript/script
-[tests]: https://github.com/Cue/hegemon-example/blob/master/src/test/resources/javascript
-[testbinding]: https://github.com/Cue/hegemon-example/blob/master/src/test/java/com/cueup/hegemon/example/ExampleTest.java
-[testserver]: https://github.com/Cue/hegemon-example/blob/master/src/test/java/com/cueup/hegemon/example/ExampleJsTestServer.java
+[endpoint]: src/main/java/com/cueup/hegemon/example/ScriptResource.java
+[customscript]: src/main/java/com/cueup/hegemon/example/CustomScriptResource.java
+[scripts]: src/main/resources/javascript/script
+[tests]: src/test/resources/javascript
+[testbinding]: src/test/java/com/cueup/hegemon/example/ExampleTest.java
+[testserver]: src/test/java/com/cueup/hegemon/example/ExampleJsTestServer.java

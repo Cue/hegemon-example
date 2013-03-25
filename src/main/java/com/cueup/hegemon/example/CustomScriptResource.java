@@ -22,8 +22,6 @@ import java.io.IOException;
 public class CustomScriptResource {
   @POST
   public Object post(String postBody) throws IOException, LoadError {
-    final Script compiled =
-        new Script("function run() { " +  postBody + " }", LoadPath.defaultPath(), "hegemon/core");
-    return compiled.run("run");
+    return new Script("customScript", "function run() { " +  postBody + " }").run("run");
   }
 }

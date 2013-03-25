@@ -1,4 +1,6 @@
-function getParamsAsObject(params) {
+let common = {};
+
+common.getParamsAsObject = function(params) {
   var result = {};
   var keys = params.keySet().iterator();
   while (keys.hasNext()) {
@@ -6,5 +8,5 @@ function getParamsAsObject(params) {
     result[key] = params.get(key).get(0);
   }
   return result;
-}
+};
 
